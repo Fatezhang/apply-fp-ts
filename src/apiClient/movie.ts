@@ -44,5 +44,8 @@ import * as t from 'io-ts';
 }
  */
 
-export const Movie = // ???
-export type Movie = // ???
+export const Movie = t.type({
+        Title: t.string,
+        imdbRating: t.string
+});
+export type Movie = t.TypeOf<typeof Movie>;
